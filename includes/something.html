@@ -1,0 +1,93 @@
+html>
+  
+  <head>
+    <title>revIt! - Business Reviews.gy</title>
+    <meta name="viewport" content="width=device-width">
+    
+    
+    
+   
+   <?php include($INCLUDE_CSS_PATH. '/cssincludes.php');?>
+    <style type="text/css">
+      body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <?php include($INCLUDE_DCOMPONENTS_PATH . '/header-main.php') ?>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+   <div class="jumbotron">
+      <div class="container">
+        <h1>Revved yet?</h1>
+        <p>Reviewing a business is the best way to let someone else know how the business made 
+
+you feel.</p>
+        <div>Were they kind or courteous? or did their lack of proffesionalism annoy you. Let 
+
+us know.
+        </div>
+        <p></p>
+        <p><a class="btn btn-primary btn-lg" href="newuser.php">Create your Free Account 
+
+</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->&lt;
+      <div class="row">
+        <div class="col-md-3">
+          <?php include($INCLUDE_DCOMPONENTS_PATH . '/categorysidebar.php'); ?>
+          <?php include($INCLUDE_DCOMPONENTS_PATH . '/reviewsidebar.php'); ?>
+        <div class="row">
+          <div class="col-lg-4">
+            <form>
+              <label class="form-label">Summary:</label>
+              <input type="text" class="form-control input-sm" placeholder="Summarize your review. e.g: " awesome ", "awful "">
+              <label class="form-label">Review:</label>
+              <textarea class="form-control input-block-level" placeholder="Enter Your Review Here" rows="12"></textarea>
+              <p><a class="btn btn-link" type="submit">Cancel</a><a class="btn btn-primary" type="submit">Submit</a></p>
+            </form>
+            <p></p>
+          </div>
+          
+          <div class="col-lg-4">
+            <hr>
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac 
+
+cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam 
+
+porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+            <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+          </div>
+          <div class="col-lg-4">
+            <hr>
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget 
+
+quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus 
+
+commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <hr>
+            <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+            <?php include($INCLUDE_DCOMPONENTS_PATH . '/bottom-business-images.php'); ?>
+          </div>
+        </div>
+        <hr>
+        <footer></footer>
+<?php include($INCLUDE_DCOMPONENTS_PATH . '/footer.php'); ?>
+
+        <!-- /container -->
+        <div class="col-md-12"></div>
+      </div>
+    </div>
+    <p>&copy; Company 2013</p>
+  </body>
+
+</html>
+
+
+
